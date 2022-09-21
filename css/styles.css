@@ -9,4 +9,90 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 3em;
+  
+}
+
+#calc{
+  width: 400px;
+  padding: .5em;
+  //background-color: #FFD700;
+  background: linear-gradient(90deg, #ffdd00 0%, #fbb034 100%);
+  color: #000
+  display: flex;
+  flex-direction: column
+}
+
+#calc{
+  border-radius: 10px;
+}
+
+#calc h3{
+  font-size: .8em
+  font-weight: 300;
+  color: #666
+}
+
+#operacoes{
+  text-align: right;
+}
+
+#operacao-atual,
+#operacao-anterior{
+  min-height: 1.6em;
+  padding: 0.2em;
+  overflow-wrap: break-word;
+  /* 
+  Em boas praticas, regras em comum podesmos usar agrupando seletor.
+  min-height: Serve para manter o espaço mesmo que o não tenha o dado.
+  Evintado o aumento brusco ao setar o dado.
+  overflow-wrap: break-word: Serve para quebrar linha e continha na linha de baixo.
+  Evitando que os dados passem pra fora da área.
+   */
+}
+
+#operacao-anterior{
+  color: #777;
+  
+  
+}
+
+#operacao-atual{
+  font-size: 3em;
+  font-weight: 700;
+}
+
+#buttons-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3px;
+}
+
+#buttons-container button{
+  border: 1px solid transparent;
+  height: 4em;
+  font-size: 1.2em;
+  background-color: #dbdbdb;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#buttons-container .number{
+  background-color: #f3f3f3;
+}
+
+#buttons-container button:hover{
+  background-color: #bababa;
+  border-color: #999;
+}
+
+#buttons-container #equal-btn{
+  grid-column: span 2;
+  background-color: #F0E68C;
+
+}
+
+#buttons-container #equal-btn:hover{
+  background-color: #FFA500;
+  
 }
