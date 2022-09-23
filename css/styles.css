@@ -34,8 +34,11 @@ body {
 }
 
 #operacoes{
-  text-align: right;
+  text-align: right;  
+  
 }
+
+
 
 #operacao-atual,
 #operacao-anterior{
@@ -60,12 +63,18 @@ body {
 #operacao-atual{
   font-size: 3em;
   font-weight: 700;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  
+  
 }
 
 #buttons-container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 3px;
+  
 }
 
 #buttons-container button{
